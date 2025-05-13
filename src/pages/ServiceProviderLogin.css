@@ -1,0 +1,43 @@
+.service-login-container {
+  background: linear-gradient(135deg, #1c1c1c, #111);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 300px;
+}
+
+.service-login-form input {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.service-login-form button {
+  padding: 12px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.service-login-form button:hover {
+  background-color: #e65c00;
+}
+
+a {
+  color: #ff6600;
+  text-decoration: none;
+}

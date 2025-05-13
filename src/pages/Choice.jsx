@@ -12,7 +12,7 @@ const Choice = () => {
 
       <div className="choice-buttons">
         <button onClick={() => navigate("/login/user")}>Login as User</button>
-        <button onClick={() => navigate("/login/provider")}>Login as Service Provider</button>
+        <button onClick={() => navigate("/login/serviceprovider")}>Login as Service Provider</button>
       </div>
     </div>
   );

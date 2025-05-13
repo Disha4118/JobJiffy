@@ -5,6 +5,8 @@ import SignUp from "./pages/Signup";
 import ServiceProfiles from "./pages/ServiceProfiles";
 import Booking from './pages/Booking';
 import Choice from "./pages/Choice";
+import ServiceProviderLogin from "./pages/ServiceProviderLogin";
+import Registerr from "./pages/Registerr";
 
 const App = () => {
   return (
@@ -12,10 +14,13 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Choice/>} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/services/:serviceType" element={<ServiceProfiles />} />
-        <Route path="/services/:serviceType/booking" element={<Booking />} />
+        <Route path="/signup" element={<SignUp />} /> 
+        <Route path="/services/:serviceType" element={<ServiceProfiles/>} />
+        <Route path="/services/:serviceType/booking" element={<Booking/>} />
         <Route path="/login/user" element={<Login/>} />
+        <Route path="/login/serviceprovider" element={<ServiceProviderLogin/>}/>
+        <Route path="/register/provider" element={<Registerr/>}/>
+        
       </Routes>
     </BrowserRouter>
   );

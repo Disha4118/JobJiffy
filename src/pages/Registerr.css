@@ -1,0 +1,110 @@
+.multi-step-container {
+  background: linear-gradient(to right, #27130f, #432d20, #64372c);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+.form-card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  animation: slideIn 0.4s ease;
+  border: 1px solid #444;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.form-card h2 {
+  text-align: center;
+  color: #ff7f50;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.form-card label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #f0f0f0;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.input-group .form-field {
+  flex: 1 1 45%;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #222;
+  color: #fff;
+  transition: border-color 0.3s;
+}
+
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus {
+  border-color: #ff7f50;
+  outline: none;
+}
+
+.form-card textarea {
+  resize: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.form-card button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-card button:hover {
+  background-color: #ff5722;
+}
+
+.step-indicator {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
